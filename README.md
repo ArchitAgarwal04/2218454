@@ -33,7 +33,7 @@ project-root/
 
 ## Screenshot
 
-![App Screenshot](public\screenshot.png)
+![App Screenshot](https://github.com/ArchitAgarwal04/2218454/blob/main/public/screenshot.png)
 
 ---
 
