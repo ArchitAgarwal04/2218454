@@ -71,3 +71,13 @@
 {"timestamp":"2025-07-15T07:08:19.205Z","stack":"frontend","level":"info","package":"component","message":"Shorten request triggered"}
 {"timestamp":"2025-07-15T07:08:19.511Z","stack":"frontend","level":"info","package":"state","message":"Short link generated and state updated"}
 {"timestamp":"2025-07-15T07:08:19.511Z","stack":"frontend","level":"info","package":"state","message":"Short link generated and state updated"}
+{"timestamp":"2025-07-15T07:11:55.274Z","stack":"frontend","level":"info","package":"page","message":"Shortener page loaded"}
+{"timestamp":"2025-07-15T07:11:55.276Z","stack":"frontend","level":"info","package":"page","message":"Shortener page loaded"}
+{"timestamp":"2025-07-15T07:11:55.273Z","stack":"frontend","level":"info","package":"page","message":"Shortener page loaded"}
+{"timestamp":"2025-07-15T07:11:55.276Z","stack":"frontend","level":"info","package":"page","message":"Shortener page loaded"}
+{"timestamp":"2025-07-15T07:15:20.120Z","stack":"frontend","level":"info","package":"component","message":"Shorten request triggered"}
+{"timestamp":"2025-07-15T07:15:20.121Z","stack":"frontend","level":"debug","package":"api","message":"POST /shorten request sent"}
+{"timestamp":"2025-07-15T07:15:20.120Z","stack":"frontend","level":"info","package":"component","message":"Shorten request triggered"}
+{"timestamp":"2025-07-15T07:15:20.121Z","stack":"frontend","level":"debug","package":"api","message":"POST /shorten request sent"}
+{"timestamp":"2025-07-15T07:15:20.387Z","stack":"frontend","level":"info","package":"state","message":"Short link generated and state updated"}
+{"timestamp":"2025-07-15T07:15:20.387Z","stack":"frontend","level":"info","package":"state","message":"Short link generated and state updated"}

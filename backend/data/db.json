@@ -82,6 +82,18 @@
           "ip": "::1"
         }
       ]
+    },
+    {
+      "url": "https://github.com/ArchitAgarwal04/2218454",
+      "shortcode": "ab",
+      "createdAt": "2025-07-15T07:15:20.333Z",
+      "clicks": 1,
+      "stats": [
+        {
+          "timestamp": "2025-07-15T07:15:22.742Z",
+          "ip": "::1"
+        }
+      ]
     }
   ]
 }

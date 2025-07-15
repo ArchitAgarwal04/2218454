@@ -31,6 +31,12 @@ project-root/
 
 ---
 
+## Screenshot
+
+![App Screenshot](./screenshot.png)
+
+---
+
 ## Setup
 
 ### 1. Backend
