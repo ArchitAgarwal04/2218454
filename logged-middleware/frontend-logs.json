@@ -1,0 +1,19 @@
+{"timestamp":"2025-07-15T06:16:09.834Z","stack":"frontend","level":"info","package":"page","message":"Shortener page loaded"}
+{"timestamp":"2025-07-15T06:16:09.833Z","stack":"frontend","level":"info","package":"page","message":"Shortener page loaded"}
+{"timestamp":"2025-07-15T06:16:18.583Z","stack":"frontend","level":"info","package":"component","message":"Shorten request triggered"}
+{"timestamp":"2025-07-15T06:16:18.583Z","stack":"frontend","level":"debug","package":"api","message":"POST /shorten request sent"}
+{"timestamp":"2025-07-15T06:16:18.853Z","stack":"frontend","level":"error","package":"api","message":"Failed to shorten URL: 400 {\"error\":\"Invalid input: url is required\"}"}
+{"timestamp":"2025-07-15T06:16:18.854Z","stack":"frontend","level":"error","package":"api","message":"Failed to shorten URL: Failed to shorten URL: 400 {\"error\":\"Invalid input: url is required\"}"}
+{"timestamp":"2025-07-15T06:20:25.942Z","stack":"frontend","level":"info","package":"page","message":"Shortener page loaded"}
+{"timestamp":"2025-07-15T06:21:05.774Z","stack":"frontend","level":"info","package":"page","message":"Shortener page loaded"}
+{"timestamp":"2025-07-15T06:21:05.776Z","stack":"frontend","level":"info","package":"page","message":"Shortener page loaded"}
+{"timestamp":"2025-07-15T06:21:19.904Z","stack":"frontend","level":"info","package":"page","message":"Shortener page loaded"}
+{"timestamp":"2025-07-15T06:21:19.905Z","stack":"frontend","level":"info","package":"page","message":"Shortener page loaded"}
+{"timestamp":"2025-07-15T06:21:26.644Z","stack":"frontend","level":"info","package":"component","message":"Shorten request triggered"}
+{"timestamp":"2025-07-15T06:21:26.644Z","stack":"frontend","level":"debug","package":"api","message":"POST /shorten request sent"}
+{"timestamp":"2025-07-15T06:21:26.923Z","stack":"frontend","level":"info","package":"state","message":"Short link generated and state updated"}
+{"timestamp":"2025-07-15T06:23:47.330Z","stack":"frontend","level":"info","package":"page","message":"Shortener page loaded"}
+{"timestamp":"2025-07-15T06:23:47.331Z","stack":"frontend","level":"info","package":"page","message":"Shortener page loaded"}
+{"timestamp":"2025-07-15T06:23:50.848Z","stack":"frontend","level":"info","package":"component","message":"Shorten request triggered"}
+{"timestamp":"2025-07-15T06:23:50.848Z","stack":"frontend","level":"debug","package":"api","message":"POST /shorten request sent"}
+{"timestamp":"2025-07-15T06:23:51.066Z","stack":"frontend","level":"info","package":"state","message":"Short link generated and state updated"}

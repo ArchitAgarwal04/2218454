@@ -1,12 +1,14 @@
 export interface ShortenRequest {
   url: string;
-  expiry?: string;
   shortcode?: string;
+  expiry?: string;
 }
 
 export interface ShortenResponse {
   shortcode: string;
   url: string;
+  shortUrl: string;
+  expiry?: string;
 }
 
 export interface UrlStats {

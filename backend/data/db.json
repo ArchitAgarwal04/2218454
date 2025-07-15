@@ -1,3 +1,23 @@
 {
-  "urls": []
-} 
+  "urls": [
+    {
+      "url": "https://github.com/ArchitAgarwal04/2218454",
+      "shortcode": "t39VhDy",
+      "createdAt": "2025-07-15T06:21:26.864Z",
+      "clicks": 0,
+      "stats": []
+    },
+    {
+      "url": "https://github.com/ArchitAgarwal04/2218454",
+      "shortcode": "y2bRIKc",
+      "createdAt": "2025-07-15T06:23:51.012Z",
+      "clicks": 1,
+      "stats": [
+        {
+          "timestamp": "2025-07-15T06:23:54.617Z",
+          "ip": "::1"
+        }
+      ]
+    }
+  ]
+}

@@ -44,7 +44,7 @@ export async function shortenUrlService(url: string, expiry: string, shortcode: 
   try {
     db.write();
     await logEvent('backend', 'info', 'service', `URL shortened successfully: ${code}`);
-    return { shortcode: code, url };
+    return { shortcode: code, url, shortUrl: `http://localhost:8080/go/${code}` };
   } catch (err: any) {
     await logEvent('backend', 'fatal', 'db', `DB failure: ${err.message}`);
     throw new Error('DB failure');

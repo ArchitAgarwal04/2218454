@@ -1,6 +1,7 @@
 import axios, { AxiosError } from 'axios';
 import * as dotenv from 'dotenv';
 import fs from 'fs';
+import path from 'path';
 dotenv.config();
 
 const LOG_URL = 'http://20.244.56.144/evaluation-service/logs';
@@ -8,7 +9,7 @@ const LOG_AUTH_TOKEN = process.env.LOG_AUTH_TOKEN;
 const ALLOWED_STACKS = ['backend', 'frontend'];
 const ALLOWED_LEVELS = ['debug', 'info', 'warn', 'error', 'fatal'];
 const ALLOWED_PACKAGES = ['route', 'controller', 'service', 'handler', 'db', 'utils', 'api', 'component', 'state'];
-const LOCAL_LOG_PATH = '../../logged-middleware/backend-logs.json';
+const LOCAL_LOG_PATH = path.resolve(__dirname, '../../logged-middleware/backend-logs.json');
 
 export async function logEvent(
   stack: string,
@@ -31,7 +32,7 @@ export async function logEvent(
 
   // Write to local log file as JSON line
   try {
-    fs.appendFileSync(require('path').join(__dirname, LOCAL_LOG_PATH), JSON.stringify(logObj) + '\n');
+    fs.appendFileSync(LOCAL_LOG_PATH, JSON.stringify(logObj) + '\n');
   } catch (err) {
     process.stderr.write(`Local log write error: ${err instanceof Error ? err.message : String(err)}\n`);
   }

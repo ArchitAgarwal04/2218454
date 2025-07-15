@@ -122,9 +122,9 @@ const UrlShortener: React.FC = () => {
       
       for (const url of validUrls) {
         const request: ShortenRequest = {
-          longUrl: url.longUrl,
+          url: url.longUrl,
           ...(url.shortcode && { shortcode: url.shortcode }),
-          ...(url.validity && { validity: Number(url.validity) }),
+          ...(url.validity && { expiry: url.validity }),
         };
 
         const result = await urlService.shortenUrl(request);

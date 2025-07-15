@@ -1,7 +1,7 @@
 export interface ShortenRequest {
-  longUrl: string;
+  url: string;
   shortcode?: string;
-  validity?: number;
+  expiry?: string;
 }
 
 export interface ShortenResponse {
