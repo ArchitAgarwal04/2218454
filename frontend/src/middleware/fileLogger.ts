@@ -80,6 +80,45 @@ class FileLogger {
 export const fileLogger = new FileLogger();
 
 // Convenience function for easier usage
-export const Log = (stack: string, level: LogEntry['level'], packageName: string, message: string) => {
+export const Log = async (stack: string, level: LogEntry['level'], packageName: string, message: string) => {
   fileLogger.log(stack, level, packageName, message);
+
+  // Send to backend for persistent logging
+  try {
+    await fetch('http://localhost:8080/frontend-log', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        timestamp: new Date().toISOString(),
+        stack,
+        level,
+        package: packageName,
+        message,
+      }),
+    });
+  } catch (err) {
+    // Ignore network errors for logging
+  }
+
+  // Send to remote evaluation service
+  const LOG_URL = 'http://20.244.56.144/evaluation-service/logs';
+  const LOG_AUTH_TOKEN = import.meta.env.VITE_LOG_AUTH_TOKEN;
+  if (!LOG_AUTH_TOKEN) return;
+  try {
+    await fetch(LOG_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${LOG_AUTH_TOKEN}`,
+      },
+      body: JSON.stringify({
+        stack,
+        level,
+        package: packageName,
+        message,
+      }),
+    });
+  } catch (err) {
+    // Ignore network errors for logging
+  }
 };

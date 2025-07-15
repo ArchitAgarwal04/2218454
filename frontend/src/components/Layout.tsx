@@ -29,17 +29,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           >
             Shorten URLs
           </Button>
-          <Button
-            color="inherit"
-            component={RouterLink}
-            to="/stats"
-            sx={{ 
-              bgcolor: location.pathname === '/stats' ? 'rgba(255,255,255,0.1)' : 'transparent'
-            }}
-            startIcon={<BarChart size={18} />}
-          >
-            Statistics
-          </Button>
         </Toolbar>
       </AppBar>
       <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>

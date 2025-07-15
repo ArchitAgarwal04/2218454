@@ -4,7 +4,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 import Layout from './components/Layout';
 import UrlShortener from './pages/UrlShortener';
-import UrlStatistics from './pages/UrlStatistics';
+// import UrlStatistics from './pages/UrlStatistics';
 
 const theme = createTheme({
   palette: {
@@ -33,7 +33,7 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<UrlShortener />} />
-            <Route path="/stats" element={<UrlStatistics />} />
+            {/* <Route path="/stats" element={<UrlStatistics />} /> */}
           </Routes>
         </Layout>
       </Router>

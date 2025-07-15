@@ -54,12 +54,31 @@
     },
     {
       "url": "https://leetcode.com/u/Archit_1608/",
-      "shortcode": "abcd",
-      "createdAt": "2025-07-15T06:37:55.416Z",
+      "shortcode": "uVQJ",
+      "createdAt": "2025-07-15T06:47:25.443Z",
+      "clicks": 0,
+      "stats": []
+    },
+    {
+      "url": "https://leetcode.com/u/Archit_1608/",
+      "shortcode": "JZka",
+      "createdAt": "2025-07-15T06:50:28.551Z",
       "clicks": 1,
       "stats": [
         {
-          "timestamp": "2025-07-15T06:37:59.959Z",
+          "timestamp": "2025-07-15T06:50:31.902Z",
+          "ip": "::1"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/ArchitAgarwal04/2218454",
+      "shortcode": "C1E7",
+      "createdAt": "2025-07-15T07:08:19.453Z",
+      "clicks": 1,
+      "stats": [
+        {
+          "timestamp": "2025-07-15T07:08:23.162Z",
           "ip": "::1"
         }
       ]

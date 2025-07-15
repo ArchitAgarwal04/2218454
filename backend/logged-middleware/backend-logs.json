@@ -1,0 +1,15 @@
+{"timestamp":"2025-07-15T07:04:51.363Z","stack":"backend","level":"info","package":"service","message":"Server started on port 8080"}
+{"timestamp":"2025-07-15T07:05:06.410Z","stack":"backend","level":"info","package":"service","message":"Server started on port 8080"}
+{"timestamp":"2025-07-15T07:08:19.232Z","stack":"backend","level":"info","package":"route","message":"POST /frontend-log request received"}
+{"timestamp":"2025-07-15T07:08:19.238Z","stack":"backend","level":"info","package":"route","message":"POST /frontend-log request received"}
+{"timestamp":"2025-07-15T07:08:19.241Z","stack":"backend","level":"info","package":"route","message":"POST /frontend-log request received"}
+{"timestamp":"2025-07-15T07:08:19.245Z","stack":"backend","level":"info","package":"route","message":"POST /shorten request received"}
+{"timestamp":"2025-07-15T07:08:19.248Z","stack":"backend","level":"info","package":"route","message":"POST /frontend-log request received"}
+{"timestamp":"2025-07-15T07:08:19.349Z","stack":"backend","level":"info","package":"route","message":"POST /shorten request received"}
+{"timestamp":"2025-07-15T07:08:19.401Z","stack":"backend","level":"debug","package":"handler","message":"Validating input for /shorten"}
+{"timestamp":"2025-07-15T07:08:19.455Z","stack":"backend","level":"info","package":"service","message":"URL shortened successfully: C1E7"}
+{"timestamp":"2025-07-15T07:08:19.513Z","stack":"backend","level":"info","package":"route","message":"POST /frontend-log request received"}
+{"timestamp":"2025-07-15T07:08:19.516Z","stack":"backend","level":"info","package":"route","message":"POST /frontend-log request received"}
+{"timestamp":"2025-07-15T07:08:23.058Z","stack":"backend","level":"info","package":"route","message":"GET /C1E7 request received"}
+{"timestamp":"2025-07-15T07:08:23.110Z","stack":"backend","level":"debug","package":"handler","message":"Redirection attempt for C1E7"}
+{"timestamp":"2025-07-15T07:08:23.165Z","stack":"backend","level":"info","package":"service","message":"Click data saved"}

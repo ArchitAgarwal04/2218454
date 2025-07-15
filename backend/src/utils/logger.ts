@@ -9,7 +9,8 @@ const LOG_AUTH_TOKEN = process.env.LOG_AUTH_TOKEN;
 const ALLOWED_STACKS = ['backend', 'frontend'];
 const ALLOWED_LEVELS = ['debug', 'info', 'warn', 'error', 'fatal'];
 const ALLOWED_PACKAGES = ['route', 'controller', 'service', 'handler', 'db', 'utils', 'api', 'component', 'state'];
-const LOCAL_LOG_PATH = path.resolve(__dirname, '../../logged-middleware/backend-logs.json');
+const LOG_DIR = path.resolve(__dirname, '../../logged-middleware');
+const LOCAL_LOG_PATH = path.join(LOG_DIR, 'backend-logs.json');
 
 export async function logEvent(
   stack: string,
@@ -30,8 +31,11 @@ export async function logEvent(
     message,
   };
 
-  // Write to local log file as JSON line
+  // Ensure log directory exists
   try {
+    if (!fs.existsSync(LOG_DIR)) {
+      fs.mkdirSync(LOG_DIR, { recursive: true });
+    }
     fs.appendFileSync(LOCAL_LOG_PATH, JSON.stringify(logObj) + '\n');
   } catch (err) {
     process.stderr.write(`Local log write error: ${err instanceof Error ? err.message : String(err)}\n`);
