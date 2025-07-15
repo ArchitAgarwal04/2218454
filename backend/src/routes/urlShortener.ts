@@ -19,8 +19,8 @@ router.get('/shorturls/:shortcode', async (req: Request, res: Response) => {
   return getUrlStatsController(req, res);
 });
 
-// GET /go/:shortcode
-router.get('/go/:shortcode', async (req: Request, res: Response) => {
+// GET /:shortcode (root-level redirect)
+router.get('/:shortcode', async (req: Request, res: Response) => {
   return redirectController(req, res);
 });
 

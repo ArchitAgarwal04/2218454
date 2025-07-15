@@ -5,6 +5,8 @@ import { nanoid } from 'nanoid';
 import path from 'path';
 import { ShortenRequest, ShortenResponse, UrlStats } from '../types';
 
+const BASE_URL = process.env.BASE_URL || 'http://localhost:8080';
+
 // DB setup
 const dbFile = path.join(__dirname, '../../data/db.json');
 const adapter = new JSONFileSync<Data>(dbFile);
@@ -31,7 +33,7 @@ export async function shortenUrlService(url: string, expiry: string, shortcode: 
     await logEvent('backend', 'warn', 'db', 'Shortcode already exists');
     throw new Error('Shortcode already exists');
   }
-  const code = shortcode || nanoid(7);
+  const code = shortcode || nanoid(4);
   const entry: UrlEntry = {
     url,
     shortcode: code,
@@ -44,7 +46,7 @@ export async function shortenUrlService(url: string, expiry: string, shortcode: 
   try {
     db.write();
     await logEvent('backend', 'info', 'service', `URL shortened successfully: ${code}`);
-    return { shortcode: code, url, shortUrl: `http://localhost:8080/go/${code}` };
+    return { shortcode: code, url, shortUrl: `${BASE_URL}/${code}` };
   } catch (err: any) {
     await logEvent('backend', 'fatal', 'db', `DB failure: ${err.message}`);
     throw new Error('DB failure');
